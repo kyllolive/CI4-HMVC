@@ -7,3 +7,9 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/', 'Home::index');
+
+$routes->group(
+    'auth', ['namespace' => '\Modules\Auth\Controllers'], function ($routes) {
+        $routes->get('/', 'Auth::index');
+    },
+);

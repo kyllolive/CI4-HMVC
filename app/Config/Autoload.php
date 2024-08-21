@@ -47,6 +47,7 @@ class Autoload extends AutoloadConfig
         APP_NAMESPACE => APPPATH, // For custom app namespace
         'Config'      => APPPATH . 'Config',
         'Modules' => APPPATH . 'Modules',
+        'Auth' => APPPATH . 'Modules/Auth',
     ];
 
     /**
